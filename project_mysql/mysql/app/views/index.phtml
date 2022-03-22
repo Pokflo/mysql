@@ -1,3 +1,8 @@
+<?php
+/**
+ * @var \Phalcon\Mvc\View\Engine\Php $this
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,9 +27,8 @@
   <ul class="sidebar-navigation">
     <li class="header"><img src="https://www.bustronome.com//wp-content/uploads/2014/06/logo2.png" alt="logo"></li>
     <li>
-      <a href="..\..\views\makeabooking\index.phtml">
-        <i class="fa fa-info-circle" aria-hidden="true"></i> MAKE A BOOKING
-      </a>
+        <?=$this->tag->linkTo("month/index/","MAKE A BOOKING"); ?>
+        <i class="fa fa-info-circle" aria-hidden="true"></i>
     </li>
     <li>
       <a href="#">
